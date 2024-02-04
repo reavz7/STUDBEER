@@ -4,19 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
     <title>STUDBEER</title>
 </head>
 <body>
 
 
-<div class="navbar">
-    <img src="toppng.com-transparent-background-beer-clipart-434x659.png" alt="">
-    <a href="#sekcja1">Strona główna</a>
-    <a href="#sekcja2">Nasi testerzy</a>
-    <a href="#sekcja3">Oceny</a>
-    <a href="#sekcja4">Kontakt</a> 
-</div>
-
+<header>
+         <div class="wrapper">
+        <div class="logo">
+            <a href="#"><img src="toppng.com-transparent-background-beer-clipart-434x659.png" alt="DevBabu.com"></a>
+        </div>
+        <div class="navbar">
+            <div class="close-nav"><button>×</button></div>
+            <nav>
+                <ul>
+                    <li><a href="#sekcja1">Strona główna</a></li>
+                    <li><a href="#sekcja2">Nasi testerzy</a></li>
+                    <li><a href="#sekcja3">Oceny</a></li>
+                    <li><a href="#sekcja4">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-bar">
+            <button><i></i></button>
+        </div>
+    </div>
+    </header>
+<div class="container">
 <!-- Sekcje do przewinięcia -->
 <div id="sekcja1" class="sekcja">
 
@@ -29,18 +44,90 @@
         </p>
         <p>Dzięki naszej działalności, każdy miłośnik piwa może znaleźć coś dla siebie, nie wydając przy tym fortuny. Wierzymy, że nasze recenzje pomogą kształtować świadome podejście do piwa, pokazując, że prawdziwa wartość napoju nie zawsze kryje się w cenie.</p>
        
-        <img class="zubr" src="Zubr.png" alt="zdjeciepiwazubr">
-        <img class="tyskie" src="TYS_GRONIE_BT500_16_02_23.png" alt="zdjeciepiwatyskie">
-        <img class="lech" src="Lech_premium.png" alt="zdjeciepiwalech">
+        
+     
 </div>
 
 
 </div>
 
-<div id="sekcja2" class="sekcja">Sekcja 2</div>
-<div id="sekcja3" class="sekcja">Sekcja 3</div>
-<div id="sekcja4" class="sekcja">Sekcja 4</div> <!-- Dodana Sekcja 4 -->
+<div id="sekcja2" class="sekcja">
+<section class="hero-section">
+  <div class="card-grid">
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(ludzie/mateusz.jpg)"></div>
+      <div class="card__content">
+        <p class="card__category">Doświadczony</p>
+        <h3 class="card__heading">Mateusz</h3>
+      </div>
+    </a>
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(ludzie/kamil.jpg)"></div>
+      <div class="card__content">
+        <p class="card__category">Łowca okazji</p>
+        <h3 class="card__heading">Kamil</h3>
+      </div>
+    </a>
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(ludzie/michal.jpg)"></div>
+      <div class="card__content">
+        <p class="card__category">Koneser</p>
+        <h3 class="card__heading">Michał</h3>
+      </div>
+    </li>
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(ludzie/damian.jpg)"></div>
+      <div class="card__content">
+        <p class="card__category">Smakosz</p>
+        <h3 class="card__heading">Damian</h3>
+      </div>
+    </a>
+  <div>
+</section>
+
+
+</div>
+<div id="sekcja3" class="sekcja">
+    <h1>SEKCJA 3(W TRAKCIE)</h1>
+</div>
+<div id="sekcja4" class="sekcja">
+    <H1>SEKCJA 4(W TRAKCIE)</H1>
+</div> <!-- Dodana Sekcja 4 -->
 
     
+</div>
+ <footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="#">Strona główna</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">FAQ</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Nasza aplikacja</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Dołącz do nas</a></li>
+
+    </ul>
+    <p>&copy;2024 STUDBEER</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
