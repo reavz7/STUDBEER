@@ -1,0 +1,170 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/*kolory jakich bede uzywac
+
+.first-color { 
+	background: #062925; 
+}
+	
+.second-color { 
+	background: #044a42; 
+}
+
+.third-color { 
+	background: #3a9188; 
+}
+
+.fourth-color { 
+	background: #b8e1dd; 
+}
+
+*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+	font-family: "Poppins", sans-serif;
+  	font-weight: 300;
+  	font-style: normal;
+    
+}
+html {
+    scroll-behavior: smooth;
+}
+.navbar {
+    position: fixed; 
+    top: 0;
+    background-color: #044a42;  
+    overflow: hidden; 
+    display: flex; 
+    justify-content: flex-end; 
+    width: 100%;    
+    overflow: hidden;
+    z-index: 1000; /* Duża wartość, aby być na wierzchu */
+}
+.navbar a {
+    color: white; 
+    text-align: center;
+    padding: 14px 20px; 
+    text-decoration: none; 	
+	transition: ease-in-out 0.3s;
+	
+}
+.navbar img{
+
+	height: 50px;
+	width: 50px;
+	margin-right: auto;
+	margin-left: 50px;
+
+}
+.navbar a:last-child{
+	margin-right: 50px;
+	
+}
+
+
+.navbar a:hover {
+    background-color: #062925;  
+    color: white;
+	
+}
+
+
+.sekcja {
+    padding: 50px;
+    text-align: center;
+    height: 900px; 
+}
+
+#sekcja1 {
+	
+	margin-top: 30px;
+	background-color: #3a9188;
+	
+ }
+
+ #sekcja1 h1{
+	font-weight: bold;
+	font-size: 90px;
+	margin: 0;
+	color: #b8e1dd;;
+ }
+ .onas{
+	position: relative;
+	padding: 50px;
+	background-color: #066459; 
+	height: 600px;
+	width: 600px;
+	border: solid 3px;
+	border-radius: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	border-color: #005f56;
+	z-index: 1;
+ }
+ .lech, .zubr, .tyskie {
+    position: absolute;
+    height: 300px; 
+    width: auto;
+    opacity: 0.7;
+    z-index: 0; 
+}
+
+.lech {
+	height: 400px;
+    left: -200px; 
+    bottom: 100px; 
+    transform: rotate(20deg);
+}
+
+.zubr {
+	height: 400px;
+    right: -150px; 
+    top: 100px; 
+    transform: rotate(-20deg);
+}
+
+.tyskie {
+    left: 50%; 
+    bottom: -150px; 
+    transform: translateX(-50%) rotate(-30deg); 
+}
+ .rozlanepiwo {
+    position: absolute;
+    opacity: 0.7;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    height: 100%; 
+    width: auto; 
+    z-index: -1; 
+}
+
+ .onas p{
+	margin-top: 30px;
+	margin-bottom: 20px;
+	text-align: center;
+	color: rgb(170, 192, 176);
+
+ }
+ #sekcja1 h2{
+	font-size: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	border-bottom: solid 1px;
+	border-color: #3a9188;
+ }
+
+
+
+
+
+
+#sekcja2 { background-color: #3a9188; }
+#sekcja3 { background-color: #3a9188; }
+#sekcja4 { background-color: #3a9188;;}
