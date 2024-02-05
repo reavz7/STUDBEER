@@ -179,11 +179,15 @@ white;
   margin: 0 auto; /* Centruje w poziomie, gdy element ma określoną szerokość */
   font-size: 80px;
   text-align: center; /* Wyśrodkowuje tekst w poziomie */
+  color: #b8e1dd; 
+  text-decoration: underline 5px;
+  text-decoration-color: #044a42;
+
 
  }
  .onas{
     padding: 20px 20px;
-    width: 100%;
+    width: 80%;
     height: auto;
 	background-color: #066459; 
 	border: solid 3px;
@@ -418,5 +422,8 @@ white;
   font-size: 50px;
   text-align: center; /* Wyśrodkowuje tekst w poziomie */
 
+ }
+ .onas{
+  width: 100%;
  }
 }
