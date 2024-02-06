@@ -165,8 +165,9 @@ white;
 #222222;
 }
 .sekcja {
-    padding: 90px;
+    padding: 30px;
     text-align: center;
+    padding-top: 80px;
 }
 
 #sekcja1 {
@@ -216,7 +217,8 @@ white;
  }
 
  .sekcja2{
-  padding: 90px;
+ padding: 30px;
+ padding-top: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -277,6 +279,67 @@ white;
  .karta-przycisk:hover{
   background-color: #066459;
  }
+
+ .sekcja3{
+ padding: 20px;
+ padding-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  gap: 20px;
+ }
+
+.ocenatlo{
+  width: 450px;
+  height: 600px;
+  background-color: #2e524e;
+  position: relative;
+  border: groove 10px white;
+  transition: ease 0.3s;
+ }
+.ocena_zawartosc h2{
+  font-size: 50px;
+    color: #00a816;
+    margin-top: 0px;
+ }
+.ocenatlo:hover{
+    background-color: #a4a1c7;
+    border: solid 10px;
+
+    
+    
+ }
+   .ocenatlo:hover h2{
+    color: rgb(49, 46, 46);
+   }
+ .ocena_zawartosc{
+  margin-top: 10px;
+  text-align: center;
+ }
+ .ocena_zawartosc img{
+  height: 340px;
+  width: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: ease 0.4s;
+ }
+ 
+ .ocena_zawartosc img:hover{
+  rotate: -25deg;
+ }
+
+ .lech {
+  color: rgb(68, 216, 0);
+}
+.gwiazdki{
+  border-top: solid 2px grey;
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  
+}
 
 .footer {
   position: relative;
@@ -406,7 +469,7 @@ white;
         font-size: inherit;
     }
     .close-nav,
-    .menu-bar {
+    .menu-bar { 
         display: none;
     }
     
