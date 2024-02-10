@@ -291,47 +291,84 @@ white;
   gap: 20px;
  }
 
-.ocenatlo{
+.ocenatlo {
+  position: relative;
   width: 450px;
   height: 600px;
   background-color: #2e524e;
-  position: relative;
   border: groove 10px white;
+  overflow: hidden;
   transition: ease 0.3s;
- }
+}
 .ocena_zawartosc h2{
   font-size: 50px;
     color: #00a816;
     margin-top: 0px;
- }
-.ocenatlo:hover{
-    background-color: #a4a1c7;
-    border: solid 10px;
-
-    
     
  }
-   .ocenatlo:hover h2{
-    color: rgb(49, 46, 46);
-   }
  .ocena_zawartosc{
-  margin-top: 10px;
-  text-align: center;
+  color: #b8e1dd; ;
  }
- .ocena_zawartosc img{
+
+.ocena_zawartosc {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.ocena_zawartosc img {
   height: 340px;
   width: 140px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   transition: ease 0.4s;
- }
+}
  
- .ocena_zawartosc img:hover{
-  rotate: -25deg;
- }
+ .testerzy {
+  position: absolute;
+  width: 100%;
+  height: 520px;
+  border-top: solid 2px grey;
+ background: rgb(6,41,37);
+  background: linear-gradient(180deg, rgba(6,41,37,1) 0%, rgba(4,74,66,1) 18%, rgba(58,145,136,1) 73%, rgba(184,225,221,1) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: inline;
+  padding: 20px;
+  top: 125px;
+  text-align: center;
+    -webkit-mask-image: linear-gradient(to bottom, black 100%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  cursor: pointer;
 
- .lech {
-  color: rgb(68, 216, 0);
+  
+}
+
+
+.testerzy h3{
+
+  color:#009657;
+  margin-bottom: 15px;
+}
+
+.fa-star{
+  color: black;
+}
+.testerzy p{
+
+  color: #cbdad8;
+}
+.tester{
+  color: gold;
+}
+
+
+.ocenatlo:hover .testerzy {
+  opacity: 1;
+  pointer-events: all;
+  /* Dodać z-index, aby upewnić się, że .testerzy pojawiają się nad .ocena_zawartosc */
+  z-index: 100;
 }
 .gwiazdki{
   border-top: solid 2px grey;
@@ -341,6 +378,11 @@ white;
   
 }
 
+.imperator{
+
+  width: 22200px;
+  height: auto;
+}
 .footer {
   position: relative;
   width: 100%;
