@@ -29,3 +29,45 @@ navLinks.forEach((link) => {
 	});
 });
 
+
+document.addEventListener("DOMContentLoaded", function () {
+  const cards = document.querySelectorAll(".karta");
+
+  // Funkcja do pokazywania karty
+  function toggleCardVisibility(event) {
+    // Znajdź najbliższy element .karta-testerzy i przełącz jego widoczność
+    const cardTesterzy = event.currentTarget.querySelector(".karta-testerzy");
+    if (cardTesterzy) {
+      cardTesterzy.classList.toggle("is-visible");
+    }
+  }
+
+  // Sprawdź szerokość ekranu, aby określić, czy urządzenie jest mobilne
+  const isMobile = window.innerWidth < 768;
+  if (isMobile) {
+    // Dla urządzeń mobilnych dodaj obsługę kliknięcia
+    cards.forEach((card) => {
+      card.addEventListener("click", toggleCardVisibility);
+    });
+
+    // Dodaj obsługę, aby kliknięcie poza kartami ukryło wszystkie karty-testerzy
+    document.body.addEventListener(
+      "click",
+      function (e) {
+        const openCards = document.querySelectorAll(
+          ".karta .karta-testerzy.is-visible"
+        );
+        openCards.forEach((card) => {
+          card.classList.remove("is-visible");
+        });
+      },
+      true
+    );
+  } else {
+    // Dla desktopów zachowaj efekt hover
+    cards.forEach((card) => {
+      card.addEventListener("mouseenter", toggleCardVisibility);
+      card.addEventListener("mouseleave", toggleCardVisibility);
+    });
+  }
+});
