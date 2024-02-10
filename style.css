@@ -666,4 +666,10 @@ nav ul li:nth-child(4) a {
  .onas{
   width: 100%;
  }
+  .testerzy{
+    margin-top: -50px;
+    -webkit-mask-image: linear-gradient(to bottom, black 100%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  cursor: pointer;
+  }
 }
