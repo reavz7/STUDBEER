@@ -164,6 +164,12 @@ white;
     border-color: 
 #222222;
 }
+nav ul li:nth-child(4) a {
+    color: gold;
+    text-decoration: underline;
+}
+
+
 .sekcja {
     padding: 30px;
     text-align: center;
@@ -224,6 +230,18 @@ white;
   align-items: center;
   margin-top: 50px;
   flex-wrap: wrap;
+
+ }
+
+  #sekcja2 h3{
+  width: 100%;
+  height: auto;
+  margin: 0 auto; 
+  font-size: 30px;
+  text-align: center; 
+  color: #b8e1dd; 
+  margin-bottom: 20px;
+
 
  }
  .karta{
@@ -290,7 +308,17 @@ white;
   flex-wrap: wrap;
   gap: 20px;
  }
+  #sekcja3 h3{
+  width: 100%;
+  height: auto;
+  margin: 0 auto; 
+  font-size: 30px;
+  text-align: center; 
+  color: #b8e1dd; 
+  margin-bottom: 20px;
 
+
+ }
 .ocenatlo {
   position: relative;
   width: 450px;
@@ -383,12 +411,119 @@ white;
   width: 22200px;
   height: auto;
 }
+
+
+ #sekcja4 h3{
+  width: 100%;
+  height: auto;
+  margin: 0 auto; 
+  font-size: 30px;
+  text-align: center; 
+  color: #b8e1dd; 
+  margin-bottom: 20px;
+
+ }
+
+.text-center {
+	text-align: center;
+}
+
+.pricing-box-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.pricing-box {
+	background-color: #ffffff;
+	box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.5);
+	border-radius: 4px;
+	flex: 1;
+	padding: 0 30px 30px;
+	margin: 2%;
+	min-width: 200px;
+	max-width: 350px;
+}
+
+.pricing-box h5 {
+	text-transform: uppercase;
+}
+
+.price {
+	margin: 24px 0;
+	font-size: 36px;
+	font-weight: 900;
+}
+
+.price sub, .price sup {
+	font-size: 16px;
+	font-weight: 100;
+}
+
+.features-list {
+	padding: 0;
+	list-style-type: none;
+}
+
+.features-list li {
+	font-weight: 100;
+	padding: 12px 0;
+	font-weight: 100;
+}
+.material-symbols-outlined{
+  color: rgb(255, 30, 0);
+  font-size: 1px;
+
+}
+
+.features-list li:not(:last-of-type) {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+	border-radius: 25px;
+	border: none;
+	background-color: #469946;
+	color: #ffffff;
+	cursor: pointer;
+	padding: 10px 15px;
+	margin-top: 20px;
+	text-transform: uppercase;
+	transition: all 0.1s ease-in-out;
+}
+
+.btn-primary:hover {
+	box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.5);
+	transform: translateY(-3px);
+}
+
+
+.pricing-box-bg-image {
+	background-image: url(pakietpiwo.avif);
+	background-size: cover;
+	background-position: center center;
+	color: #000000;
+}
+
+
+.pricing-box-bg-image .features-list li {
+	border-bottom-color: rgba(255, 255, 255, 1);
+}
+
+.pricing-box-bg-image .btn-primary {
+	background-color: #fffb00;
+	color: #000;
+}
+
+
 .footer {
   position: relative;
   width: 100%;
   background: #3586ff;
   min-height: 100px;
-  padding: 20px 50px;
+  padding: 30px 50px;
   display: flex;
   justify-content: center;
   align-items: center;
